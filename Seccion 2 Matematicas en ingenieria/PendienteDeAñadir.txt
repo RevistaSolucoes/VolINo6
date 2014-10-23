@@ -1,0 +1,2 @@
+\subsection{Compresión de archivos}
+Como hemos visto en el ejemplo de la señal cuadrada, unos pocos términos de la serie de Fourier bastan para aproximar de manera razonable una función periódica dada. Esto puede ser útil para comprimir información (como una imagen o un sonido grabado), ya que podemos sacar la correspondiente serie de Fourier y quedarnos sólo con los primeros armónicos.

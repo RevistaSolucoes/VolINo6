@@ -1,0 +1,5 @@
+x = linspace(-2*pi, 2*pi, 1000);
+y = 10*cos(x) + sin(20*x);
+
+plot(x,y, 'linewidth', 2, 'color', 'green')
+print -deps FuncionEjemplo.eps

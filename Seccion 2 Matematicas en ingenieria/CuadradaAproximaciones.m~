@@ -1,0 +1,15 @@
+x = linspace(-3*pi, 3*pi, 10000);
+y0=ones(1,10000);
+for i=1:9999
+	y0(i) = rem (floor(i*6/10000), 2);
+endfor
+y1 = 4/pi * sin(x);
+
+figure
+hold on
+axis([-3*pi, 3*pi, -1.4, 1.4])
+set(gca,'XTick',[-2*pi, -pi, 0 , pi, 2*pi])
+set(gca,'YTick',[-1, 0, 1])
+grid
+plot(x,y0, 'linewidth', 3, 'color', 'black', x,y1, 'linewidth', 3, 'color', 'blue');
+print('CuadradaAproximaciones.tex','-dtex');

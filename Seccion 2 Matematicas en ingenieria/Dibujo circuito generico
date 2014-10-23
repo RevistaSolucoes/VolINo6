@@ -1,0 +1,83 @@
+
+Supongamos que tenemos un circuito eléctrico como el de la figura, donde conocemos un \textit{input} que llamamos $V_S(t)$ y nos interesa conocer la tensión en otro punto del circuito. Esta tensión será nuestro \textit{output}, y la denotamos por $V_0(t)$. A priori puede ser muy complicado resolver el problema, dependiendo de la complejidad del circuito y de lo complicada que sea la función $V_S(t)$.
+
+\begin{wrapfigure}{l}{0.40\textwidth} 
+  \vspace{-20pt}
+  \begin{figurebox}
+   \vspace{8pt}
+    \centering
+    %\hspace{0cm}
+\begin{circuitikz}[scale=0.5]\shorthandoff{>}
+% Rama izquierda
+    \def\xa{0}
+    \def\ya{0}
+    \def\xb{1.5}
+    \def\yb{3}
+    \draw                                     (\xa,\ya)
+             to[american voltage source]      (\xa,\yb)
+             to[short, -*]                    (\xb,\yb)
+             to[open]                         (\xb,\ya)
+             to[short, *-]                    (\xa,\ya);
+%
+%
+% Bloque central
+    \def\xc{5.5}
+    \def\yc{3.5}
+    \def\yd{-0.5}
+    \draw                                     (\xb,\yc)
+             to                               (\xc,\yc)
+             to                               (\xc,\yd) 
+             to                               (\xb,\yd) node[right=29pt, above=22pt]{\large{\textbf{Circuito}}}
+             to                               (\xb,\yc);
+%
+%
+% Rama derecha
+    \def\xd{6.5}
+    \draw                                     (\xc,\yb)
+             to[short,*-]                     (\xd,\yb)
+             to[open,o-o]                     (\xd,\ya) node[right=8pt, above=36pt]{$+$} node[right=8pt, above=-7pt]{$-$}
+             to[short,-*]                     (\xc,\ya);
+             
+%
+%
+% Simbolo de potencial
+    \draw 
+    [decorate,decoration={brace,amplitude=5pt},xshift=0pt,yshift=0pt, thick]
+    (\xd+1,\yb) -- (\xd+1,\ya)
+    node [black,midway,xshift=18pt] { $V_0(t)$};
+%
+    \draw [decorate,decoration={brace,amplitude=5pt},xshift=0pt,yshift=0pt, thick, color=white]
+    (\xa-1,\ya) -- (\xa-1,\yb)
+    node [black,midway,xshift=-15pt] { $V_S(t)$};
+\end{circuitikz}
+    \vspace{-8pt}
+    %\vspace{0.1\textheight}
+  \end{figurebox}
+ \vspace{-20pt}
+\end{wrapfigure}
+
+En este caso, la función arbitraria que nos complica la solución del problema es $V_S(t)$. Por lo tanto, vamos a aplicar la estrategia que hemos indicado antes.
+
+\textbf{[1]} Para dividir el problema complicado en varios sencillos, expresamos $V_S$ como una serie de Fourier:
+\[
+V_S(t) = a_0 + \sum_{k=0}^{\infty} a_k \cos(kt) + b_k \sin(kt)
+\]
+
+\textbf{[2]} Supongamos que cuando la excitación inicial $V_S$ es un coseno, podemos encontrar la solución. Esquemáticamente:
+\[
+V_S(t) = \cos(kt) \quad \Longrightarrow \quad V_0(t) = y_{ak}(t)
+\]
+Análogamente, cuando la excitación $V_S$ inicial es un seno, resolveríamos el problema obteniendo:
+\[
+V_S(t) = \sin(kt) \quad \Longrightarrow \quad V_0(t) = y_{bk}(t)
+\]
+Por último, cuando el input $V_S$ es una constante obtendríamos otra solución:
+\[
+V_S(t) = 1 \quad \Longrightarrow \quad V_0(y) = y_{0}(t)
+\]
+
+\textbf{[3]} Nuestra función arbitraria original $V_S$ era una combinación de armónicos (y una constante), de modo que es razonable pensar que si combinamos las soluciones sencillas:
+\[
+V_0(t) = a_0y_0(t) + \sum_{k=0}^{\infty} a_k \,y_{ak}(t) + b_k \,y_{bk}(t)
+\]
+encontraremos precisamente la solución del problema original. Los circuitos que tienen esta propiedad se dicen lineales.

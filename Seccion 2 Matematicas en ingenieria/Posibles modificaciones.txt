@@ -1,0 +1,5 @@
+ - Añadir ferrorresonancia (si acaso, en la segunda parte)
+ - Repasar fuentes y labels de todas las gráficas.
+ - Repasar referencias a ecuaciones y figuras.
+ - Añadir bibliografía.
+ - Repasar referencia a lo que dejo en la página web (applet / codigo de octave) 
