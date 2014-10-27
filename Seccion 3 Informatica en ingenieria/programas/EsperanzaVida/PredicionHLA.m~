@@ -12,7 +12,7 @@
 % Hemos creado un archivo csv con los datos mencionados. Lo leemos y
 % lo traemos al espacio de trabajo.
 
-datos=read.csv("Hopelife.csv")
+datos=csvread("Hopelife.csv")
 
 
 %octave:41> hold on;
@@ -47,7 +47,7 @@ datos=read.csv("Hopelife.csv")
 %  syntax error
 
 %>>> plot(anios(1:23), hopelife(1:23),'b','LineWidth?,4)
-                                                      ^
+                                                      
 
 %octave:53> plot(anios(1:23), hopelife(1:23),'b','LineWidth',4)
 %octave:54> legend("Guerra civil angoleña")
@@ -69,7 +69,7 @@ datos=read.csv("Hopelife.csv")
 %  syntax error
 
 %>>> plot(anios(1:23), hopelife(1:23),'b','LineWidth?,4)
-                                                      ^
+                                                      
 
 %octave:69> plot(x1,y1)
 %octave:70> plot(x1,y1)

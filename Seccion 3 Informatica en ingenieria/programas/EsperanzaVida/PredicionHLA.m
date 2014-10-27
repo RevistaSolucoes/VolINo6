@@ -12,7 +12,37 @@
 % Hemos creado un archivo csv con los datos mencionados. Lo leemos y
 % lo traemos al espacio de trabajo.
 
-datos=read.csv("Hopelife.csv")
+datos=csvread("Hopelife.csv");
+
+% La primera fila lleva el nombre de las variables y el comando csvread 
+% lo ha leido como 0's. Los quitamos. Recordad que la primera columna es
+% el año y la segunda la esperanza de vida de ese año.
+
+datos=datos(2:end,:);
+
+
+ % Vamos a visualizar los datos dados y sacar algunas conclusiones.
+figure
+plot(datos(:,1),datos(:,2),'*r','markersize',15)
+title('Evolución de la esperanza de vida desde 1980 a 2012')
+xlabel('años')
+ylabel('esperanza de vida')
+legend("Evolución de la esperanza de vida")
+print('DatosPuros','-depsc')
+
+
+% Marcamos los dos clasters o las dos tendencias de los datos
+
+figure
+plot(datos(1:16,1),datos(1:16,2),'sr','linewidth',3,'markersize',15)
+hold on
+plot(datos(17:end,1),datos(17:end,2),'ob','linewidth',3,'markersize',20)
+title('Evolución de la esperanza de vida desde 1980 a 2012')
+xlabel('años')
+ylabel('esperanza de vida')
+legend("Tendencia constante","Tendencia lineal","location","southeast")
+print('DatosTendencia','-depsc')
+
 
 
 %octave:41> hold on;
@@ -47,7 +77,7 @@ datos=read.csv("Hopelife.csv")
 %  syntax error
 
 %>>> plot(anios(1:23), hopelife(1:23),'b','LineWidth?,4)
-                                                      ^
+                                                      
 
 %octave:53> plot(anios(1:23), hopelife(1:23),'b','LineWidth',4)
 %octave:54> legend("Guerra civil angoleña")
@@ -69,7 +99,7 @@ datos=read.csv("Hopelife.csv")
 %  syntax error
 
 %>>> plot(anios(1:23), hopelife(1:23),'b','LineWidth?,4)
-                                                      ^
+                                                      
 
 %octave:69> plot(x1,y1)
 %octave:70> plot(x1,y1)
