@@ -1,3 +1,23 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%  Programa que realiza una estimación de esperanza de vida de Angola
+%%  usando los datos sacados del Banco Mundial de Datos desde 1980 a
+%%  2012. Lo realilzamos mediante regresióin lineal, específicamente
+%%  usando ecuaciones normales.%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%% Etapa de exploración de datos
+
+datos=csvread("Hopelife.csv");
+plot(datos(:,1),datos(:,2),'b*',"Sizemarker",4)
+
+
+
+
+
+
 octave:41> hold on;
 octave:42> plot(X(:,2), X*theta, 'r-')
 octave:43> legend("Aproximación lineal")
@@ -37,6 +57,7 @@ octave:54> legend("Guerra civil angoleña")
 
 
 x1 =
+
 
    2002   2003   2004   2005   2006   2007   2008   2009   2010   2011   2012
 
