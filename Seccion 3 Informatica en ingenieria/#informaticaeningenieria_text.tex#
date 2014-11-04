@@ -214,7 +214,7 @@ $. Te animamos a que programes construir esta matriz para fualquier tamaño $n$ 
 \subsection{Matriz suma binaria}
 En esta subsección vamos a animarte a que realices un programa en Octave que programe la siguiente matriz.
 \begin{mybox}
-  \cappar C: Construir una matriz cuadrada de tamaño $n$ cuyas entradas es la suma de la fila $i$-ésima en la que se encuentra en binario más la columna $j$-esima en la que se encuentra pasado a decimal. Esto es, por ejemplo, ¿qué entrada va a tener la posición (5,7)? Para ello escribimos $5$ y $7$ en binario que es respectivamente $111$ y realizamos la suma en binario y nos da $010$ que corresponde con $2$.\vspace{1.5cm}
+  \cappar C: Construir una matriz cuadrada de tamaño $n$ cuyas entradas es la suma elemento a elemento de la fila $i$-ésima en la que se encuentra en binario más la columna $j$-esima en la que se encuentra pasado a decimal. Esto es, por ejemplo, ¿qué entrada va a tener la posición (5,7)? Para ello escribimos $5$ y $7$ en binario que es respectivamente $111$ y realizamos la suma  elemento a elemento en binario(no es la suma natural) y nos da $010$ que corresponde con $2$.\vspace{1.5cm}
 \end{mybox}
 
 Te animamos a que la programes y refutes con nuestros progrmas que colgaremos en la sección de códigos de la web de nuestra revista. Monstramos a contuinuación la estructura de algunas de estas matrices creadas en la Figura \ref{binarias}.

@@ -1,0 +1,74 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Vamos a resolver la ecuacion de Lorentz usando el comando 
+%  lsode (es un equivalente a ode45 de Matlab) para diferentes
+%  parametros y perturbaciones de estos.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% Condiciones iniciales
+%x0=[1;1;1];
+% Valor de los parametros
+%a=10;b=28;c=8/3;
+% Resolver y dibujar
+%t=linspace(0,50,5000);
+%tic;x=lsode( "lorentz",x0,a,b,c,t);toc
+%plot3(x(:,1),x(:,2),x(:,3))
+x=0;
+function xdot=func(x,t)
+%a=10;b=28;c=8/3;
+%a=3;b=4;c=1;
+a=30;b=20;c=3;
+xdot(1,1)=a*(x(2)-x(1));
+xdot(2,1)=x(1)*(b-x(3))-x(2);
+xdot(3,1)=x(1)*x(2)-c*x(3);
+end
+
+%subplot(2,2,1)
+x0=[1;1;1];
+t=linspace(0,50,5000);
+tic;x=lsode( "func",x0,t);toc
+plot3(x(:,1),x(:,2),x(:,3))
+contour(x(:,1),x(:,2),x(:,3))
+
+%pause
+%figure
+%comet3(x(:,1),x(:,2),x(:,3),0.000001)
+
+%figure
+%plot(x(:,1),x(:,2),0.000001)
+
+%pause
+%plot(x(:,1),x(:,3),0.000001)
+
+%pause
+%plot(x(:,2),x(:,3),0.000001)
+
+
+%pause
+%figure
+%scatter3(x(:,1),x(:,2),x(:,3))
+
+%subplot(2,2,2)
+%x0=[1.001;1;1];
+%t=linspace(0,50,5000);
+%tic;x=lsode( "func",x0,t);toc
+%plot3(x(:,1),x(:,2),x(:,3),'r')
+
+
+%subplot(2,2,3)
+%x0=[0.99;1.001;1];
+%t=linspace(0,50,5000);
+%tic;x=lsode( "func",x0,t);toc
+%plot3(x(:,1),x(:,2),x(:,3),'g')
+
+
+
+%subplot(2,2,4)
+%x0=[1.0001;1.000;1.0001];
+%t=linspace(0,50,5000);
+%tic;x=lsode( "func",x0,t);toc
+%plot3(x(:,1),x(:,2),x(:,3),'m')
+
+%comet3(x(:,1),x(:,2),x(:,3))

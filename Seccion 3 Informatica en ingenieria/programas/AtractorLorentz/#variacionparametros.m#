@@ -1,0 +1,30 @@
+x=0;
+function xdot=func1(x,t)
+a=10;b=28;c=8/3;
+xdot(1,1)=a*(x(2)-x(1));
+xdot(2,1)=x(1)*(b-x(3))-x(2);
+xdot(3,1)=x(1)*x(2)-c*x(3);
+end
+function xdot=func2(x,t)
+a=0.2;b=a;c=5;
+xdot(1,1)=a*(x(2)-x(1));
+xdot(2,1)=x(1)*(b-x(3))-x(2);
+xdot(3,1)=x(1)*x(2)-c*x(3);
+end
+% Dibujamos la solución
+
+x0=[1;1;1];
+t=linspace(0,50,5000);
+t2=linspace(0,50,5000);
+%tic;x1=lsode("func1",x0,t);toc
+tic;x2=lsode("func2",x0,t2);toc
+%plot3(x1(:,1),x1(:,2),x1(:,3))
+hold on
+plot3(x2(:,1),x2(:,2),x2(:,3),'r')
+legend('parametros \alpha=10,\beta=28 y \rho=8/3','parametros \alpha=10,\beta=28 y \rho=8/3')
+
+
+
+
+%title('Curva de Lorentz para parametros \alpha=10,\beta=28 y \rho=8/3')
+%print('CurvaLorentz','-depsc')

@@ -1,5 +1,8 @@
 (TeX-add-style-hook "informaticaeningenieria_text"
  (lambda ()
     (LaTeX-add-labels
-     "datos")))
+     "datos"
+     "resultados"
+     "Lorentz"
+     "proyecciones")))
 
