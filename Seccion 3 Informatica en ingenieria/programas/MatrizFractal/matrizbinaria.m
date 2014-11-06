@@ -4,6 +4,8 @@ for i=1:n
     s1=dec2bin(i)-'0';
     for j=i+1:n
 	s2=dec2bin(j)-'0';
+        s1
+        s2
         c=s1+s2;
         pos=c==2;
         c(pos)=0;
