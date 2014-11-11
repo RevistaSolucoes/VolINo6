@@ -4,8 +4,10 @@
      '("setrow" 9)
      "vol"
      "Title"
-     "Author")
+     "Author"
+     "lshape")
     (TeX-run-style-hooks
+     "tikz"
      "skak"
      "pifont"
      ""

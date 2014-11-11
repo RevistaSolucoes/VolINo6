@@ -1,45 +1,82 @@
 \begin{multicols}{2}
 
-\cappar
-
-Para este número os planteamos un desafío que pueden encontrar en el libro de Matemagia de Adrián Paenza y un reto ajedrecista. ¡Esperamos que se diviertan! 
-
-\section*{El problema de Monty Hall}
+  \cappar En este número os damos la solución al desafío del anterior número y os dejamos un nuevo desafío basado en un programa de televisión americano y una nueva partida. Al final os dejamos un recortable para que compartan con los mas pequeños. ¡Disfrútenlo!
 
 
-\section{El desafío: Monty Hall extendido}
+\section*{Desafíos fín de año}
+\subsection{Desafío Día de la Familia}
+The tourist has come to the Moscow by train.  All-day-long he wandered
+randomly through the streets.  Than he had a supper in the cafe on the
+square and decided to return to the station only through the streets
+that he has passed an odd number of times.
+Prove that he is always able to do that.
+\subsection{Desafío año nuevo}
+\begin{enumerate}
+\item Una cierta comité se ha reunido 40 veces. Hubo 10 miembros en
+todas las reuniones. Ni una sola pareja se ha reunido en las reuniones dos veces.
+Demuestre que había no menos de 60 miembros en el comité.
+\item Demuestra que no se puede construir más de 30 subcomités de 5 miembros de la comisión de 25 miembros, sin par de subcomités que tienen más de un miembro común.
+\end{enumerate}
+{\bf Las soluciones en el próximo número.}
+\section*{\textcolor{redsol}{Soluciones del número anterior}}
+\subsection{El desafío: Monty Hall extendido}
+Esta vez, vamos a daros la solución al problema de Monty Hall con \textbf{cuatro} puertas, una de las cuales esconde un premio que quieres ganar y cuando eliges por primera vez, el presentador te abre dos puertas malas y te da a elegir entre tu puerta y la que queda sin abrir.
 
-\section*{Ajedrez}
+ Cuando eliges una puerta, tienes $1/4$ de probabilidad de acertar, y por lo tanto, tienes $3/4$ de probabilidades de haber fallado (evidentemente, esta probabilidad se reparte entre las tres puertas que no se han elegido, cada una con $1/4$).
 
-Te ofrecemos un reto ajedrecístico. En esta famosa partida, que te desvelaremos en el siguiente número, 
-las blancas juegan y ganan. ¿Podrías encontrar la espectacular jugada ganadora?
+Cuando el presentador abre las dos puertas malas, tu probabilidad de haber acertado no cambia en absoluto, sigue siendo $1/4$. Por lo tanto, tampoco cambia la probabilidad de que hayas fallado, que sigue siendo $3/4$. Por lo tanto, tenemos dos puertas. El premio está en la tuya con probabilidad $1/4$ y debe estar en la otra con probabilidad $3/4$, de modo que lo más recomendable sería cambiar de puerta.
+%\end{multicols}
 
-\newgame
-\mainline{1. e4 e5 2. d4 exd4 3. c3 dxc3 4. Nxc3 Bb4 5. Bc4 Qe7 6. Ne2 Nf6 7. O-O O-O 8. Bg5 Qe5 9. Bxf6 Qxf6 10. Nd5 Qd6 11. e5 Qc5 12. Rc1 Qa5 13. a3 Bxa3 14. bxa3 c6 15. Ne7 Kh8 16. Qd6 Qd8 17. Nd4 b6 18. Rc3 c5 19. Ndf5 Ba6}
-% 20. Qg6}
 \begin{center}
-\showboard 
+\begin{tikzpicture}
+\coordinate (star) at (0,-1);
+\path (star) +(-50:7) coordinate (rhs) +(-130:7) coordinate (lhs);
+\draw[brown!50!black,line width=5mm,line cap=round] (star) ++(-90:6.8) -- ++(0,-1) coordinate (base);
+\node[scale=-1,trapezium,fill=black,minimum size=1cm] at (base) {};
+\foreach \height/\colour in {%
+  .2/blue,
+  .4/yellow,
+  .6/red,
+  .8/orange,
+  1/pink%
+} {
+  \draw[tinsel=\colour] ($(star)!\height!(lhs)$) to[bend right] ($(star)!\height!(rhs)$);
+}
+\path (star);
+\pgfgetlastxy{\starx}{\stary}
+\begin{scope}[xshift=\starx,yshift=\stary,yshift=-7cm]
+\draw[color=green!50!black, l-system={rule set={S -> [+++G][---G]TS,  G -> +H[-G]L, H -> -G[+H]L, T -> TL, L -> [-FFF][+FFF]F}, step=4pt, angle=18, axiom=+++++SLFFF, order=11}] lindenmayer system -- cycle;
+\end{scope}
+\foreach \height/\colour in {%
+  .1/pink,
+  .3/red,
+  .5/yellow,
+  .7/blue,
+  .9/orange%
+} {
+  \draw[tinsel=\colour] ($(star)!\height!(lhs)$) to[bend right] ($(star)!\height!(rhs)$);
+}
+\foreach \height in {.15,.35,...,1} {
+  \draw[lights]  ($(star)!\height!(lhs)$) to[bend right] ($(star)!\height!(rhs)$);
+}
+\foreach \angle/\colour in {
+  -50/red,
+  -70/yellow,
+  -90/blue,
+  -110/pink,
+  -130/purple%
+} {
+  \draw[baubles=\colour] (star) -- ++(\angle:7);
+}
+\node[star,star point ratio=2.5,fill=yellow,minimum size=1cm] at (star) {};
+\end{tikzpicture}
+\LARGE{\textcolor{red}{Feliz Natal}}
 \end{center}
 
 
-{\bf Las soluciones en el próximo número.}
-\section*{\textcolor{redsol}{Soluciones del número anterior}}
-\subsection*{El desafío: el borrón}
-Para que sea múltiplo de 72 tiene que ser múltiplo de 8 y de 9
-porque son coprimos. Para que sea divisible por 8, las tres últimas
-cifras (79Y) tienen que formar un número múltiplo de 8. Luego,
-tiene que ser 792. Por otro lado, para que sea múltiplo de 9, la
-suma de sus dígitos tiene que ser múltiplo de 9: luego, X + 6 + 7
-+ 9 + 2 = X + 24 tiene que ser múltiplo de 9. Conclusión, X = 3. El
-número en cuestión era 36.792. Por lo tanto, cada televisor salió
-a  511 (ya que multiplicado por 72 resulta ser 36.792).
-
-\subsection{Las reglas de divisibilidad}
-
-
 \end{multicols}
-
 \newpage
+
 
 %%% Local Variables:
 %%% mode: latex

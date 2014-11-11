@@ -11,6 +11,56 @@
 \makeatletter\let\Author\@author\makeatother
 
 
+
+\usepackage{tikz}
+\usetikzlibrary{%
+  lindenmayersystems,
+  decorations.pathmorphing,
+  decorations.markings,
+  shapes.geometric,
+  calc%
+}
+\tikzset{
+  tinsel/.style={
+    #1,
+    rounded corners=10mm,
+    ultra thin,
+    decorate,
+    decoration={
+      snake,
+      amplitude=.1mm,
+      segment length=10,
+    }
+  },
+  baubles/.style={
+    decorate,
+    decoration={
+      markings,
+      mark=between positions .3 and 1 step 2cm
+      with
+      {
+        \pgfmathsetmacro{\brad}{2 + .5 * rand}
+        \path[shading=ball,ball color=#1] (0,0) circle[radius=\brad mm];
+      }
+    }
+  },
+  lights/.style={
+    decorate,
+    decoration={
+      markings,
+      mark=between positions 0 and 1 step 1cm
+      with
+      {
+        \pgfmathparse{rand > 0 ? "dart" : "kite"}
+        \let\lshape\pgfmathresult
+         \pgfmathsetmacro{\tint}{100*rnd}
+        \node[rotate=90,\lshape,shading=ball,inner sep=1pt,ball color=red!\tint!yellow] {};
+      }
+    }
+  }
+}
+
+
 \newcommand{\vol}{Vol. I, No. 5}
 %\renewcommand{\seccol}{scicol!60}
 \renewcommand{\seccol}{cscc}

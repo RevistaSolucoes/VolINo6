@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.15)  5 NOV 2014 11:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.15)  10 NOV 2014 14:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1563,10 +1563,10 @@ Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\bf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 8.
+(scrartcl)              by `\normalfont \bfseries ' on input line 7.
 
 LaTeX Font Info:    Font shape `T1/yv2/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/yv2/b/n' tried instead on input line 8.
+(Font)              Font shape `T1/yv2/b/n' tried instead on input line 7.
 
 Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              You should note, that in 1994 font command `\bf' has
@@ -1579,21 +1579,7 @@ Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\bf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 21.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\bf'!
-(scrartcl)              You should note, that in 1994 font command `\bf' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\bf' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\bf' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 34.
+(scrartcl)              by `\normalfont \bfseries ' on input line 20.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\bf'!
@@ -1607,7 +1593,21 @@ Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\bf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 50.
+(scrartcl)              by `\normalfont \bfseries ' on input line 33.
+
+
+Class scrartcl Warning: Usage of deprecated font command `\bf'!
+(scrartcl)              You should note, that in 1994 font command `\bf' has
+(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
+(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrartcl)              shouldn't use such commands any longer and within
+(scrartcl)              KOMA-Script usage of `\bf' is definitely deprecated.
+(scrartcl)              See `fntguide.pdf' for more information about
+(scrartcl)              recommended font commands.
+(scrartcl)              Note also, that KOMA-Script will remove the definition
+(scrartcl)              of `\bf' anytime until release of about version 3.20.
+(scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
+(scrartcl)              by `\normalfont \bfseries ' on input line 49.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\bf'!
@@ -1743,14 +1743,14 @@ Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
 (scrartcl)              by `\normalfont \bfseries ' on input line 94.
 
-Package mdframed Info: mdframed works in twoside mode on input line 98.
+Package mdframed Info: mdframed works in twoside mode on input line 97.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 98.
+(mdframed)              on input line 97.
 <luis.jpg, id=42, 722.7pt x 1284.8pt>
 File: luis.jpg Graphic file (type jpg)
  <use luis.jpg>
-Package pdftex.def Info: luis.jpg used on input line 100.
+Package pdftex.def Info: luis.jpg used on input line 99.
 (pdftex.def)             Requested size: 216.81166pt x 385.44298pt.
 
 
@@ -1765,7 +1765,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sl'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sl' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 103.
+(scrartcl)              by `\normalfont \slshape ' on input line 102.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -1779,7 +1779,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 107.
+(scrartcl)              by `\normalfont \sffamily ' on input line 106.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -1793,7 +1793,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 107.
+(scrartcl)              by `\normalfont \sffamily ' on input line 106.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -1807,7 +1807,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 107.
+(scrartcl)              by `\normalfont \sffamily ' on input line 106.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\tt'!
@@ -1821,7 +1821,7 @@ Class scrartcl Warning: Usage of deprecated font command `\tt'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\tt' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\tt'
-(scrartcl)              by `\normalfont \ttfamily ' on input line 107.
+(scrartcl)              by `\normalfont \ttfamily ' on input line 106.
 
 [3 <./luis.jpg>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
@@ -1835,29 +1835,25 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
 Package rerunfilecheck Info: File `solucionenaccion.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
- )
-(\end occurred inside a group at level 1)
-
-### simple group (level 1) entered at line 94 ({)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
- 27236 strings out of 493304
- 487263 string characters out of 6139871
- 619650 words of memory out of 5000000
- 30163 multiletter control sequences out of 15000+600000
+ 27228 strings out of 493304
+ 487091 string characters out of 6139871
+ 619520 words of memory out of 5000000
+ 30155 multiletter control sequences out of 15000+600000
  68097 words of font info for 58 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 68i,21n,77p,10457b,1088s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/venturisadf/t1-f
-_f-venturisadf.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}<
-/usr/share/texlive/texmf-dist/fonts/type1/public/initials/Typocaps.pfb></usr/sh
-are/texmf/fonts/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/arkandis/venturis2/yv2b8a.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/arkandis/venturis2/yv2r8a.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/arkandis/venturis2/yv2ri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ar
-kandis/venturissans2/yv3r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arka
-ndis/venturissans2/yv3ri8a.pfb>
-Output written on solucionenaccion.pdf (2 pages, 270663 bytes).
+ 68i,21n,77p,10457b,1086s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/venturisadf/t1-f_f-venturisadf
+.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/tex
+live/texmf-dist/fonts/type1/public/initials/Typocaps.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sftt1095.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/arkandis/venturis2/yv2b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arkan
+dis/venturis2/yv2r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arkandis/ve
+nturis2/yv2ri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arkandis/venturi
+ssans2/yv3r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arkandis/venturiss
+ans2/yv3ri8a.pfb>
+Output written on solucionenaccion.pdf (2 pages, 270915 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
