@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.15)  5 NOV 2014 10:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.15)  11 NOV 2014 10:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -665,7 +665,6 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/venturis2/ts1yv2.fd)
 Overfull \hbox (25.69511pt too wide) in paragraph at lines 55--77
 [] [] 
  []
@@ -678,20 +677,20 @@ Overfull \vbox (11.45274pt too high) has occurred while \output is active []
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./indice.aux) ) 
 Here is how much of TeX's memory you used:
- 5413 strings out of 493304
- 75854 string characters out of 6139871
+ 5357 strings out of 493304
+ 75090 string characters out of 6139871
  193987 words of memory out of 5000000
- 8779 multiletter control sequences out of 15000+600000
- 35981 words of font info for 37 fonts, out of 8000000 for 9000
+ 8726 multiletter control sequences out of 15000+600000
+ 40449 words of font info for 37 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 46i,12n,39p,372b,316s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,11n,39p,372b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/shar
-e/texlive/texmf-dist/fonts/enc/dvips/venturisadf/ts1-euro-venturisadf.enc}{/usr
-/share/texlive/texmf-dist/fonts/enc/dvips/venturisadf/t1-f_f-venturisadf.enc}</
-usr/share/texlive/texmf-dist/fonts/type1/arkandis/venturis2/yv2r8a.pfb>
-Output written on indice.pdf (1 page, 21354 bytes).
+e/texlive/texmf-dist/fonts/enc/dvips/venturisadf/t1-f_f-venturisadf.enc}</usr/s
+hare/texlive/texmf-dist/fonts/type1/arkandis/venturis2/yv2r8a.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/arkandis/venturis2/yv2ri8a.pfb>
+Output written on indice.pdf (1 page, 32213 bytes).
 PDF statistics:
- 16 PDF objects out of 1000 (max. 8388607)
+ 17 PDF objects out of 1000 (max. 8388607)
  11 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)

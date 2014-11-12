@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.15)  7 NOV 2014 13:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.15)  11 NOV 2014 10:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1708,25 +1708,25 @@ Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\bf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 20.
+(scrartcl)              by `\normalfont \bfseries ' on input line 24.
 
 LaTeX Font Info:    Font shape `T1/yv2/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/yv2/b/n' tried instead on input line 20.
-LaTeX Font Info:    Try loading font information for U+msa on input line 25.
+(Font)              Font shape `T1/yv2/b/n' tried instead on input line 24.
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 25.
+LaTeX Font Info:    Try loading font information for U+msb on input line 33.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (23.41324pt too wide) in paragraph at lines 72--74
+Overfull \hbox (23.41324pt too wide) in paragraph at lines 88--90
  [] 
  []
 
 LaTeX Font Info:    Font shape `T1/yv2/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/yv2/m/it' tried instead on input line 78.
+(Font)              Font shape `T1/yv2/m/it' tried instead on input line 94.
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              You should note, that in 1994 font command `\sf' has
@@ -1739,21 +1739,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 78.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\sf'!
-(scrartcl)              You should note, that in 1994 font command `\sf' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sf' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sf' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 78.
+(scrartcl)              by `\normalfont \sffamily ' on input line 94.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -1767,7 +1753,21 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 78.
+(scrartcl)              by `\normalfont \sffamily ' on input line 94.
+
+
+Class scrartcl Warning: Usage of deprecated font command `\sf'!
+(scrartcl)              You should note, that in 1994 font command `\sf' has
+(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
+(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrartcl)              shouldn't use such commands any longer and within
+(scrartcl)              KOMA-Script usage of `\sf' is definitely deprecated.
+(scrartcl)              See `fntguide.pdf' for more information about
+(scrartcl)              recommended font commands.
+(scrartcl)              Note also, that KOMA-Script will remove the definition
+(scrartcl)              of `\sf' anytime until release of about version 3.20.
+(scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
+(scrartcl)              by `\normalfont \sffamily ' on input line 94.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\tt'!
@@ -1781,9 +1781,9 @@ Class scrartcl Warning: Usage of deprecated font command `\tt'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\tt' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\tt'
-(scrartcl)              by `\normalfont \ttfamily ' on input line 78.
+(scrartcl)              by `\normalfont \ttfamily ' on input line 94.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 78.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 94.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 ) [20{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
@@ -1798,13 +1798,13 @@ LaTeX Info: Redefining \% on input line 26.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 93.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 93.
 Package rerunfilecheck Info: File `jugando.out' has not changed.
-(rerunfilecheck)             Checksum: 579AF18EE4B34C6DED96B856290AA16F;209.
+(rerunfilecheck)             Checksum: 26D0C7EFB268B4E1144489F880D1FAAF;210.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 93.
  ) 
 Here is how much of TeX's memory you used:
  31440 strings out of 493304
- 566002 string characters out of 6139871
- 3294082 words of memory out of 5000000
+ 566004 string characters out of 6139871
+ 3293068 words of memory out of 5000000
  34279 multiletter control sequences out of 15000+600000
  82682 words of font info for 63 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -1820,7 +1820,7 @@ turis2/yv2b8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arkandis/venturis2
 v3b8ax.pfb></usr/share/texlive/texmf-dist/fonts/type1/arkandis/venturissans2/yv
 3r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arkandis/venturissans2/yv3r
 i8a.pfb>
-Output written on jugando.pdf (1 page, 258624 bytes).
+Output written on jugando.pdf (1 page, 258819 bytes).
 PDF statistics:
  167 PDF objects out of 1000 (max. 8388607)
  99 compressed objects within 1 object stream

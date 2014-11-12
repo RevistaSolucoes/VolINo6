@@ -1,27 +1,25 @@
 \documentclass[a4paper,twoside, 11pt, leqno]{scrartcl}
 
 \input{../head.tex}
-\title{Solução em ação}
-\author{Luis Arantes Lemos de Azevedo}
+\title{Novedades:Premio Nobel de Física 2014}
+\author{Bartlomiej Skorulski}
 %\date{}
-
 
 \makeatletter\let\Title\@title\makeatother
 \makeatletter\let\Author\@author\makeatother
 
-
 \newcommand{\vol}{Vol. I, No. 6}
-%\renewcommand{\seccol}{scicol!60}
-\renewcommand{\seccol}{cscccccc}
+
+%\renewcommand{\seccol}{sccol!60}
+\renewcommand{\seccol}{csccc}
 \begin{document}
 
-\setcounter{page}{2}
+\setcounter{page}{16}
 \thispagestyle{scrplain}
 
+\input{novedades_text.tex}
 
-\input{solucionenaccion_text.tex}
-
-%\bibliographystyle{plain}
+\bibliographystyle{plain}
 %\bibliography{catenaria}
 \end{document}
 %%% Local Variables: 
