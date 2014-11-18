@@ -4,5 +4,12 @@
      "datos"
      "resultados"
      "Lorentz"
-     "proyecciones")))
+     "proyecciones"
+     "ruben"
+     "propos")
+    (TeX-run-style-hooks
+     "DatosPuros"
+     "DatosTendencia"
+     "CurvaLorentz"
+     "Proyecciones")))
 

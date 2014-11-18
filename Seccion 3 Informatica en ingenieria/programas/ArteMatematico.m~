@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%% Arte con Octave
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+subplot(3,2,1)
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Casco Romano
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+title('Casco romano')
+[x y]=meshgrid(-1.5:0.01:1.5,-0.7:0.01:0);
+mesh(sin(x),cos(x),y);
+hold on
+[theta r]=meshgrid(0:0.01:2*pi,0:0.01:1);
+x=r.*cos(theta);
+y=r.*sin(theta);
+z=sqrt(1-x.^2-y.^2).*(x.^2+y.^2<1);
+mesh(x,y,z);
+hold on
+[x y]=meshgrid(-0.3:0.01:0,0.5:0.01:1.5);
+surf(sin(x)/2,cos(x)/2,y);
+surf(-sin(x)/2,cos(x)/2,y);
+surf(-sin(x)/2,-cos(x)/2,y);
+surf(sin(x)/2,-cos(x)/2,y);
+hold on
+[y z]=meshgrid(-0.5:0.01:0.5,0.3:0.01:1.5);
+x=y.*0+z.*0+0.15;
+x1=y.*0+z.*0-0.15;
+mesh(x,y,z);
+mesh(x1,y,z);
+hold on
+[x y]=meshgrid(-1.8:0.01:1.8,-0.1:0.01:-0.4);
+mesh(sin(x),-cos(x).*y+0.3,y);
+hold on
+[x y]=meshgrid(-0.3:0.01:0.3,-1:0.01:1.5);
+z1=sin(x);
+z2=y;
+z3=cos(y)+0.6;
+mesh(z1,z2,z3);
+ddz1=-sin(x);
+ddz2=0+0.*x+0.*y;
+ddz3=-cos(y);
+quiver3(z1,z2,z3,-ddz1,-ddz2,-ddz3,1);
+hold off
+subplot(3,2,2)
+
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+% Pingüino
+%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%
+title('Pingüino')
+[x,y,z]=sphere(16)
+surf(x,y,z,’facecolor’,’black’)
+hold on
+surf(x,y,z,’facecolor’, ‘black’)
+
+surf(x,y+2,z,’facecolor’, ‘black’)
+
+surf(x,y+4,z,’facecolor’, ‘black’)
+
+surf(x,y+6,z,’facecolor’, ‘black’)
+
+surf(x,y+6,z-2,’facecolor’, ‘black’)
+
+surf(x,y+8,z-2,’facecolor’, ‘black’)
+
+surf(x,y,z-2,’facecolor’, ‘black’)
+
+surf(x,y-2,z-2,’facecolor’, ‘black’)
+
+surf(x,y-2,z-6,’facecolor’, ‘black’)
+
+surf(x,y-2,z-4,’facecolor’, ‘black’)
+
+surf(x,y+8,z-4,’facecolor’, ‘black’)
+
+surf(x,y+8,z-6,’facecolor’, ‘black’)
+
+surf(x,y-2,z-8,’facecolor’, ‘black’)
+
+surf(x,y,z-8,’facecolor’, ‘black’)
+
+surf(x,y+4,z-8,’facecolor’, ‘black’)
+
+surf(x,y+6,z-8,’facecolor’, ‘black’)
+
+surf(x,y+2,z-8,’facecolor’, ‘black’)
+
+surf(x,y,z-6,’facecolor’, ‘black’)
+
+surf(x,y+4,z-4,’facecolor’, ‘black’)
+
+surf(x,y-2,z-10,’facecolor’, ‘black’)
+
+surf(x,y-2,z-12,’facecolor’, ‘black’)
+
+surf(x,y-2,z-14,’facecolor’, ‘black’)
+
+surf(x,y-2,z-16,’facecolor’, ‘black’)
+
+surf(x,y-4,z-12,’facecolor’, ‘black’)
+
+surf(x,y-4,z-14,’facecolor’, ‘black’)
+
+surf(x,y-4,z-16,’facecolor’, ‘black’)
+
+surf(x,y-6,z-12,’facecolor’, ‘black’)
+
+surf(x,y-6,z-14,’facecolor’, ‘black’)
+
+surf(x,y-8,z-12,’facecolor’, ‘black’)
+
+surf(x,y,z-8,’facecolor’, ‘black’)
+
+surf(x,y,z-10,’facecolor’, ‘black’)
+
+surf(x,y,z-12,’facecolor’, ‘black’)
+
+surf(x,y,z-14,’facecolor’, ‘black’)
+
+surf(x,y,z-16,’facecolor’, ‘black’)
+
+surf(x,y,z-8,’facecolor’, ‘black’)
+
+surf(x,y,z-10,’facecolor’, ‘black’)
+
+surf(x,y,z-12,’facecolor’, ‘black’)
+
+surf(x,y,z-14,’facecolor’, ‘black’)
+
+surf(x,y-2,z-10,’facecolor’, ‘black’)
+
+surf(x,y+10,z-4,’facecolor’, ‘yellow’)
+
+surf(x,y-2,z-18,’facecolor’, ‘black’)
+
+surf(x,y-2,z-20,’facecolor’, ‘black’)
+
+surf(x,y-2,z-22,’facecolor’, ‘black’)
+
+surf(x,y-4,z-18,’facecolor’, ‘black’)
+
+surf(x,y-4,z-20,’facecolor’, ‘black’)
+
+surf(x,y-6,z-18,’facecolor’, ‘black’)
+
+surf(x,y+4,z-22,’facecolor’,’red’)
+
+surf(x,y+2,z-22,’facecolor’,’red’)
+
+surf(x,y+6,z-22,’facecolor’,’red’)
+
+surf(x,y,z-20,’facecolor’,’white’)
+
+surf(x,y,z-22,’facecolor’,’white’)
+
+surf(x,y+2,z-20,’facecolor’,’white’)
+
+surf(x,y,z-20,’facecolor’,’white’)
+
+surf(x,y,z-10,’facecolor’, ‘black’)
+
+surf(x,y,z-12,’facecolor’, ‘black’)
+
+surf(x,y,z-14,’facecolor’, ‘black’)
+
+surf(x,y,z-16,’facecolor’, ‘black’)
+
+surf(x,y,z-18,’facecolor’, ‘black’)
+
+surf(x,y+2,z-20,’facecolor’,’white’)
+
+surf(x,y+2,z-10,’facecolor’,’white’)
+
+surf(x,y+2,z-12,’facecolor’, ‘black’)
+
+surf(x,y+2,z-14,’facecolor’, ‘black’)
+
+surf(x,y+2,z-16,’facecolor’, ‘black’)
+
+surf(x,y+2,z-18,’facecolor’,’white’)
+
+surf(x,y+4,z-10,’facecolor’,’white’)
+
+surf(x,y+4,z-12,’facecolor’,’white’)
+
+surf(x,y+4,z-14,’facecolor’,’white’)
+
+surf(x,y+4,z-16,’facecolor’,’white’)
+
+surf(x,y+4,z-18,’facecolor’,’white’)
+
+surf(x,y+4,z-20,’facecolor’,’white’)
+
+surf(x,y+6,z-10,’facecolor’,’white’)
+
+surf(x,y+6,z-12,’facecolor’,’white’)
+
+surf(x,y+6,z-14,’facecolor’,’white’)
+
+surf(x,y+6,z-16,’facecolor’,’white’)
+
+surf(x,y+6,z-18,’facecolor’,’white’)
+
+surf(x,y+8,z-12,’facecolor’,’white’)
+
+surf(x,y+8,z-14,’facecolor’,’white’)
+
+surf(x,y+8,z-16,’facecolor’,’white’)
+[x y]=meshgrid(-2:0.1:2,-2:0.1:2);
+z=(4-2*y.^2+3*x.^2)*exp(2-3*x.^2-(y.^2)/4)/400;
+
+surf(x-8,y-9,z-23,’facecolor’,’blue’)
+
+surf(x-8,y+10,z-23,’facecolor’,’blue’)
+
+surf(x-8,y+5,z-23,’facecolor’,’blue’)
+
+surf(x-8,y-3,z-23,’facecolor’,’blue’)
+
+surf(x+6,y-9,z-23,’facecolor’,’blue’)
+
+surf(x+6,y+10,z-23,’facecolor’,’blue’)
+
+xlabel(‘x’)
+
+ylabel(‘y’)
+
+[x y]=meshgrid(-13:0.7:13,-13:0.7:13);
+
+z=cos(x)/6+sin(y)
+
+surf(x,y,z-23)
+hold off
+
+
+
+
+
+

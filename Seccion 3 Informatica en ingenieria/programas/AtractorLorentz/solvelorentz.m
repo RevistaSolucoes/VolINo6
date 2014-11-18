@@ -26,19 +26,13 @@ x0=[1;1;1];
 t=linspace(0,50,5000);
 tic;x=lsode("func",x0,t);toc
 plot3(x(:,1),x(:,2),x(:,3))
-title('Curva de Lorentz para parametros \alpha=10,\beta=28 y \rho=8/3')
-print('CurvaLorentz','-depsc')
+title('Curva de Lorentz con parámetros $\alpha=10$, $\beta=28$ y $\rho=\frac{8}{3}$')
+print('CurvaLorentz','-dpdflatex') % crear código latex para edición revista
 
 % Dibujamos proyecciones en cada plano
 
 figure
 subplot(1,3,1)
-% Proyectamos sobre el plano x-y
-%v1=[0,1,-1];
-%v2=[1,0,0];
-%theta1=acos(v1*v2'/norm(v1)/norm(v2));
-%rot1=[1 0 0;0 cos(theta1) -sin(theta1);0 sin(theta1) cos(theta1)];
-%x=(rot1*x')'
 plot(x(:,1),x(:,2),0.000001)
 title('Platos')
 
@@ -48,4 +42,4 @@ title('Mariposa')
 subplot(1,3,3)
 plot(x(:,2),x(:,3),0.000001)
 title('Buho')
-print('Proyecciones','-depsc')
+print('Proyecciones','-dpdflatex')

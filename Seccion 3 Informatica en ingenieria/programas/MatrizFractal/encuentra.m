@@ -1,3 +1,9 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Dada una lista de naturales mayores o 
+%% iguales que uno busca el menor número faltante
+%% no consecutivo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 function s=encuentra(lista)
 [n m]=size(lista);
 i=1;
@@ -8,7 +14,6 @@ else
   while (i<m && lista(i+1)-lista(i)<2)
       i=i+1;
   end  
-  
   if (i==m-1 &&  lista(i+1)-lista(i)<2)
     s=max(lista)+1;
   else

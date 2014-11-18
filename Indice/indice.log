@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.15)  11 NOV 2014 10:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.15)  17 NOV 2014 09:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -665,7 +665,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Overfull \hbox (25.69511pt too wide) in paragraph at lines 55--77
+Overfull \hbox (23.4451pt too wide) in paragraph at lines 55--77
 [] [] 
  []
 
@@ -688,7 +688,7 @@ Here is how much of TeX's memory you used:
 e/texlive/texmf-dist/fonts/enc/dvips/venturisadf/t1-f_f-venturisadf.enc}</usr/s
 hare/texlive/texmf-dist/fonts/type1/arkandis/venturis2/yv2r8a.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/arkandis/venturis2/yv2ri8a.pfb>
-Output written on indice.pdf (1 page, 32213 bytes).
+Output written on indice.pdf (1 page, 32754 bytes).
 PDF statistics:
  17 PDF objects out of 1000 (max. 8388607)
  11 compressed objects within 1 object stream

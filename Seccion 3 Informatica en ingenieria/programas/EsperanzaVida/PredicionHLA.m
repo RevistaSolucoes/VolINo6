@@ -30,7 +30,7 @@ title('Evolución de la esperanza de vida desde 1980 a 2012')
 xlabel('años')
 ylabel('esperanza de vida')
 legend("Evolución de la esperanza de vida")
-print('DatosPuros','-depsc')
+print('DatosPuros','-dpdflatex') % crear código latex para edición revista
 disp('Pulse pause para continuar')
 pause
 
@@ -44,7 +44,7 @@ title('Evolución de la esperanza de vida desde 1980 a 2012')
 xlabel('años')
 ylabel('esperanza de vida')
 legend("Tendencia constante","Tendencia lineal","location","southeast")
-print('DatosTendencia','-depsc')
+print('DatosTendencia','-dpdflatex') % crear código latex para edición revista
 disp('Pulse pause para continuar')
 pause
 
@@ -80,4 +80,4 @@ title('Aproximación de la esperanza de vida en Ángola')
 xlabel('años')
 ylabel('esperanza de vida')
 legend("Datos","Regresión lineal","location","southeast")
-print('DatosPredicion','-depsc')
+print('DatosPredicion','-dpdflatex') % crear código latex para edición revista

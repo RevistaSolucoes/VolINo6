@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.15)  11 NOV 2014 10:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.15)  12 NOV 2014 09:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1579,7 +1579,7 @@ Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\bf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 19.
+(scrartcl)              by `\normalfont \bfseries ' on input line 18.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\bf'!
@@ -1593,7 +1593,7 @@ Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\bf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 32.
+(scrartcl)              by `\normalfont \bfseries ' on input line 31.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\bf'!
@@ -1607,7 +1607,7 @@ Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\bf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 48.
+(scrartcl)              by `\normalfont \bfseries ' on input line 47.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\bf'!
@@ -1621,7 +1621,7 @@ Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\bf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 62.
+(scrartcl)              by `\normalfont \bfseries ' on input line 61.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\bf'!
@@ -1635,7 +1635,7 @@ Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\bf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 75.
+(scrartcl)              by `\normalfont \bfseries ' on input line 74.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\bf'!
@@ -1649,10 +1649,10 @@ Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\bf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 83.
+(scrartcl)              by `\normalfont \bfseries ' on input line 82.
 
 LaTeX Font Info:    Font shape `T1/yv2/m/sl' in size <10.95> not available
-(Font)              Font shape `T1/yv2/m/it' tried instead on input line 85.
+(Font)              Font shape `T1/yv2/m/it' tried instead on input line 84.
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              You should note, that in 1994 font command `\sf' has
@@ -1665,18 +1665,18 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 85.
+(scrartcl)              by `\normalfont \sffamily ' on input line 84.
 
-LaTeX Font Info:    Try loading font information for T1+yv3 on input line 85.
+LaTeX Font Info:    Try loading font information for T1+yv3 on input line 84.
 (/usr/share/texlive/texmf-dist/tex/latex/venturissans2/t1yv3.fd
 File: t1yv3.fd 2010/07/03 Fontinst v1.933 font definitions for T1/yv3.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 85.
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 85.
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1693,7 +1693,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 85.
+(scrartcl)              by `\normalfont \sffamily ' on input line 84.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -1707,7 +1707,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 85.
+(scrartcl)              by `\normalfont \sffamily ' on input line 84.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\tt'!
@@ -1721,12 +1721,12 @@ Class scrartcl Warning: Usage of deprecated font command `\tt'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\tt' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\tt'
-(scrartcl)              by `\normalfont \ttfamily ' on input line 85.
+(scrartcl)              by `\normalfont \ttfamily ' on input line 84.
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 85.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 84.
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [2{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+) [3{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
 
@@ -1741,16 +1741,16 @@ Class scrartcl Warning: Usage of deprecated font command `\bf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\bf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\bf'
-(scrartcl)              by `\normalfont \bfseries ' on input line 93.
+(scrartcl)              by `\normalfont \bfseries ' on input line 92.
 
-Package mdframed Info: mdframed works in twoside mode on input line 96.
+Package mdframed Info: mdframed works in twoside mode on input line 95.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 96.
+(mdframed)              on input line 95.
 <luis.jpg, id=42, 722.7pt x 1284.8pt>
 File: luis.jpg Graphic file (type jpg)
  <use luis.jpg>
-Package pdftex.def Info: luis.jpg used on input line 98.
+Package pdftex.def Info: luis.jpg used on input line 97.
 (pdftex.def)             Requested size: 216.81166pt x 385.44298pt.
 
 
@@ -1765,7 +1765,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sl'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sl' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sl'
-(scrartcl)              by `\normalfont \slshape ' on input line 101.
+(scrartcl)              by `\normalfont \slshape ' on input line 100.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -1779,7 +1779,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 105.
+(scrartcl)              by `\normalfont \sffamily ' on input line 104.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -1793,7 +1793,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 105.
+(scrartcl)              by `\normalfont \sffamily ' on input line 104.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -1807,7 +1807,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 105.
+(scrartcl)              by `\normalfont \sffamily ' on input line 104.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\tt'!
@@ -1821,9 +1821,9 @@ Class scrartcl Warning: Usage of deprecated font command `\tt'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\tt' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\tt'
-(scrartcl)              by `\normalfont \ttfamily ' on input line 105.
+(scrartcl)              by `\normalfont \ttfamily ' on input line 104.
 
-[3 <./luis.jpg>])
+[4 <./luis.jpg>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
  (./solucionenaccion.aux
@@ -1843,7 +1843,7 @@ Here is how much of TeX's memory you used:
  30155 multiletter control sequences out of 15000+600000
  68097 words of font info for 58 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 68i,21n,77p,10457b,1086s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 68i,21n,77p,10457b,1088s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/venturisadf/t1-f_f-venturisadf
 .enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/tex
 live/texmf-dist/fonts/type1/public/initials/Typocaps.pfb></usr/share/texmf/font
@@ -1853,7 +1853,7 @@ dis/venturis2/yv2r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arkandis/ve
 nturis2/yv2ri8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arkandis/venturi
 ssans2/yv3r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/arkandis/venturiss
 ans2/yv3ri8a.pfb>
-Output written on solucionenaccion.pdf (2 pages, 271003 bytes).
+Output written on solucionenaccion.pdf (2 pages, 270946 bytes).
 PDF statistics:
  79 PDF objects out of 1000 (max. 8388607)
  44 compressed objects within 1 object stream
