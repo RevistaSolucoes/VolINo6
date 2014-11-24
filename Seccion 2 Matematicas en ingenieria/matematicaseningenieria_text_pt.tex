@@ -1,12 +1,27 @@
 \section{Introdução}
-No anterior artigo desta série vimos como representar uma função periódica como soma de harmónicos, ideia que foi desenvolvida por Fourier quando quis explicar como se propagava o calor. No entanto, essa técnica resultou ser facilmente extrapolável a problemas de outros ramos da física e da engenharia, como a teoria de circuitos elétricos.
+No anterior artigo desta série vimos como representar uma função
+periódica como soma de harmónicos, ideia que foi desenvolvida por
+Fourier quando quis explicar como se propagava o calor. No entanto,
+essa técnica resultou ser facilmente extrapolável a problemas de
+outros ramos da física e da engenharia, como a teoria de circuitos
+elétricos.
 
-Ao longo deste artigo, vamos aplicar a estratégia que desenvolveu Fourier a um clássico problema de eletromagnetismo, o circuito RLC (resistor-indutor-capacitor circuito. De facto, após uma primeira aproximação utilizando senos e cossenos, voltaremos a olhar para o problema sob o prisma da análise complexa, vendo como o problema se simplifica ainda mais.
+Ao longo deste artigo, vamos aplicar a estratégia que desenvolveu
+Fourier a um clássico problema de eletromagnetismo, o circuito RLC
+(resistor-indutor-capacitor circuito. De facto, após uma primeira
+aproximação utilizando senos e cossenos, voltaremos a olhar para o
+problema sob o prisma da análise complexa, vendo como o problema se
+simplifica ainda mais.
 
-Se quiserem ampliar, recomendamos que consultem \cite{Sadiku}, uma vez que é o livro que vamos seguir neste artigo.
+Se quiserem ampliar, recomendamos que consultem \cite{Sadiku}, uma vez
+que é o livro que vamos seguir neste artigo.
 
 \section{O circuito RLC}
-Vamos começar a colocar detalhadamente o problema que queremos resolver. Temos o circuito mostrado na Figura \ref{fig:RLC}, formado por uma resistência que denotamos por $R$, uma bobina com indução $L$ e um condensador com capacidade $C$, com todos os elementos dispostos em série.
+Vamos começar a colocar detalhadamente o problema que queremos
+resolver. Temos o circuito mostrado na Figura \ref{fig:RLC}, formado
+por uma resistência que denotamos por $R$, uma bobina com indução $L$
+e um condensador com capacidade $C$, com todos os elementos dispostos
+em série.
 \begin{figure}[h]
 \begin{figurebox}
     \vspace{5pt}
@@ -81,40 +96,66 @@ Vamos começar a colocar detalhadamente o problema que queremos resolver. Temos 
 \end{figure}
 
 
-O circuito é excitado com um sinal $V_S$ que supomos conhecido, e o objetivo é determinar o potencial entre as placas do condensador, ao qual chamaremos $v_C$.
+O circuito é excitado com um sinal $V_S$ que supomos conhecido, e o
+objetivo é determinar o potencial entre as placas do condensador, ao
+qual chamaremos $v_C$.
 
-Em geral, a resolução de um circuito elétrico está associada à resolução de uma equação diferencial que temos que deduzir aplicando alguma lei física. Neste caso utilizamos as \textbf{relações constitutivas} de cada elemento, que são as equações que descrevem como se comportam as resistências, as autoinduções ou os condensadores. Neste caso, se $i(t)$ representa a intensidade de corrente no nosso circuito, deduzirá que:
+Em geral, a resolução de um circuito elétrico está associada à
+resolução de uma equação diferencial que temos que deduzir aplicando
+alguma lei física. Neste caso utilizamos as \textbf{relações
+  constitutivas} de cada elemento, que são as equações que descrevem
+como se comportam as resistências, as autoinduções ou os
+condensadores. Neste caso, se $i(t)$ representa a intensidade de
+corrente no nosso circuito, deduzirá que:
 
 \begin{itemize}
-\item A queda de tensão ao longo da resistência é $v_R(t) = i(t) \cdot R$ pela lei de Ohm.
-\item A queda de tensão ao longo da indução é $v_L(t) = L\cdot \frac{\text{d} i}{\text{d}t}(t)$.
-\item A queda de tensão ao longo do condensador vem determinada por $i(t) = C\cdot \frac{\text{d}v_C}{\text{d}t}(t)$.
+\item A queda de tensão ao longo da resistência é $v_R(t) = i(t) \cdot
+  R$ pela lei de Ohm.
+\item A queda de tensão ao longo da indução é $v_L(t) = L\cdot
+  \frac{\text{d} i}{\text{d}t}(t)$.
+\item A queda de tensão ao longo do condensador vem determinada por
+  $i(t) = C\cdot \frac{\text{d}v_C}{\text{d}t}(t)$.
 \end{itemize}
 
-Ainda, a lei de Kirchoff diz que a soma de todas essas diferenças de tensão deve ser precisamente igual à excitação, isto é:
+Ainda, a lei de Kirchoff diz que a soma de todas essas diferenças de
+tensão deve ser precisamente igual à excitação, isto é:
 \begin{equation}
   \label{eq:RLC1}
   V_{S}(t) = v_{R}(t) + v_{L}(t) + v_{C}(t) = i(t)\cdot R + L\cdot \frac{\text{d}i}{\text{d}t}(t) + v_C(t).
 \end{equation}
-Para simplificar a equação temos que deixar todas as incógnitas em função de $v_C(t)$, para isso, notemos que:
+Para simplificar a equação temos que deixar todas as incógnitas em
+função de $v_C(t)$, para isso, notemos que:
 \begin{equation}
   \label{eq:IntensidadCarga}
   \frac{\text{d}i(t)}{\text{d}t} = C\cdot \frac{\text{d}^2v_C}{\text{d}t^2}(t),
 \end{equation}
-de modo que podemos substituir \eqref{eq:IntensidadCarga} em \eqref{eq:RLC1} para encontrar
+de modo que podemos substituir \eqref{eq:IntensidadCarga} em
+\eqref{eq:RLC1} para encontrar
 \begin{mybox}\vspace{-5mm}
   \begin{equation}
     \label{eq:RLC}
     L\cdot C\cdot v_C''(t) + R\cdot C\cdot v_C'(t) + v_C(t) = V_S(t)
   \end{equation}
 \end{mybox}
-que e a equação que vamos tentar resolver. Notemos que já aparecem os produtos $L\cdot C$ e $R\cdot C$, extremamente comuns neste tipo de problemas, razão pela qual é útil habitualmente vê-los como coeficientes que caracterizam o circuito.
+que e a equação que vamos tentar resolver. Notemos que já aparecem os
+produtos $L\cdot C$ e $R\cdot C$, extremamente comuns neste tipo de
+problemas, razão pela qual é útil habitualmente vê-los como
+coeficientes que caracterizam o circuito.
 
 
 \section{Resolução do problema}
-Tal e como lhe aconteceu a Fourier quando enfrentou o problema da propagação do calor, nós apenas sabemos resolver a equação \eqref{eq:RLC} quando a excitação $V_S$ é uma função simples, como um harmónico. Nesse caso particular, podemos encontrar uma solução que chamaremos função própria ou \textbf{modo normal}. Portanto, quando tivermos uma superposição de harmónicos, a solução será uma superposição de modos normais.
+Tal e como lhe aconteceu a Fourier quando enfrentou o problema da
+propagação do calor, nós apenas sabemos resolver a equação
+\eqref{eq:RLC} quando a excitação $V_S$ é uma função simples, como um
+harmónico. Nesse caso particular, podemos encontrar uma solução que
+chamaremos função própria ou \textbf{modo normal}. Portanto, quando
+tivermos uma superposição de harmónicos, a solução será uma
+superposição de modos normais.
 
-Na altura de aplicar o processo anterior, podemos estar bastante tiempo com contas e perder a perspetiva do que estamos a fazer, de modo que é conveniente dividir a resolução em três passos, que essencialmente são:
+Na altura de aplicar o processo anterior, podemos estar bastante
+tiempo com contas e perder a perspetiva do que estamos a fazer, de
+modo que é conveniente dividir a resolução em três passos, que
+essencialmente são:
 \begin{mybox}
   \begin{enumerate}[{\bfseries [R1]}]
   \item Dividir o problema complicado por vários problemas simples.
@@ -123,7 +164,9 @@ Na altura de aplicar o processo anterior, podemos estar bastante tiempo com cont
 \end{enumerate}
 \end{mybox}
 
-Ora bem, antes de começar a utilizar séries de Fourier, notemos que \eqref{eq:RLC} é uma equação diferencial linear de segunda ordem. Como não é homogénea, sabemos que a solução geral é da forma:
+Ora bem, antes de começar a utilizar séries de Fourier, notemos que
+\eqref{eq:RLC} é uma equação diferencial linear de segunda ordem. Como
+não é homogénea, sabemos que a solução geral é da forma:
 \[
 v_C(t) = y_h(t) + y_p(t),
 \]
@@ -134,17 +177,24 @@ em que $y_h$ é a solução geral da correspondente equação homogénea:
 \end{equation}
  entretanto $y_p$ é uma solução particular da não homogénea \eqref{eq:RLC}.
 
-\subsection{Solução de la homogénea} \label{solucionHomogenea}
-Como a equação \eqref{eq:HomogeneaRLC} é de coeficientes constantes, as soluções são combinações lineares de funções da forma:
+\subsection{Solução de la homogénea} \label{solucionHomogenea} 
+
+Como a equação \eqref{eq:HomogeneaRLC} é de coeficientes constantes,
+as soluções são combinações lineares de funções da forma:
 \[
 y_h(t) = e^{r\cdot t},
 \]
-em que $r$ é uma constante que pode ser complexa\footnote{Para uma análise detalhada das equações diferenciais de coeficientes constantes, consultar \cite[p.~226]{DiPrima}}. Ao substituir $y_h$ em \eqref{eq:HomogeneaRLC} deduzimos que $r$ deve ser solução da equação característica
+em que $r$ é uma constante que pode ser complexa\footnote{Para uma
+  análise detalhada das equações diferenciais de coeficientes
+  constantes, consultar \cite[p.~226]{DiPrima}}. Ao substituir $y_h$
+em \eqref{eq:HomogeneaRLC} deduzimos que $r$ deve ser solução da
+equação característica
 \begin{equation}
-  \label{eq:Característica}
+  \label{eq:Caracteristica}
   L\cdot C\cdot r^2 + R\cdot C\cdot r + 1 = 0
 \end{equation}
-de modo que o problema passa por analisar esta equação de segundo grau. Despejando $r$ de \eqref{eq:Caracteristica} obtemos:
+de modo que o problema passa por analisar esta equação de segundo
+grau. Despejando $r$ de \eqref{eq:Caracteristica} obtemos:
 \[
 r_\pm = -\frac{R}{2\cdot L} \pm \sqrt{\left( \frac{R}{2\cdot L} \right)^2 - \frac{1}{L\cdot C}} \equiv \alpha \pm \sqrt{\Delta},
 \]
@@ -152,25 +202,32 @@ a depender do signo de
 \[
 \Delta = \left( \frac{R}{2\cdot L} \right)^2 - \frac{1}{L\cdot C},
 \]
-podemos obter valores de $r$ reais ou complexos, e em cada caso vamos obter uma solução ligeiramente diferente.
+podemos obter valores de $r$ reais ou complexos, e em cada caso vamos
+obter uma solução ligeiramente diferente.
 \begin{itemize}
-  \item Se $\Delta > 0$, então temos dois valores reais $r_{\pm}=\alpha \pm \beta $, de modo que podemos pôr:
+\item Se $\Delta > 0$, então temos dois valores reais $r_{\pm}=\alpha
+  \pm \beta $, de modo que podemos pôr:
 \[
-y_h(t) = C_{\!_+} e^{r_{\!_+} t} + C_{\!_-} e^{r_{\!_-}t} = e^{\alpha t}\left(C_1\sinh(\beta\, t) + C_2 \cosh(\beta\, t)\right).
+y_h(t) = C_{\!_+} e^{r_{\!_+} t} + C_{\!_-} e^{r_{\!_-}t} = e^{\alpha
+  t}\left(C_1\sinh(\beta\, t) + C_2 \cosh(\beta\, t)\right).
 \]
-Dizemos que neste caso temos \textbf{amortecimento supercrítico}, uma vez que a solução tende para zero sem oscilar conforme o tempo aumenta.
+Dizemos que neste caso temos \textbf{amortecimento supercrítico}, uma
+vez que a solução tende para zero sem oscilar conforme o tempo
+aumenta.
   \item Se $\Delta = 0$, então temos uma solução real dupla $r$, portanto:
 \[
 y_h(t) = (C_1t+C_2)\cdot e^{rt}.
 \]
-Neste caso temos \textbf{amortecimento crítico}, situação em que a solução converge a zero mais rapidamente.
+Neste caso temos \textbf{amortecimento crítico}, situação em que a
+solução converge a zero mais rapidamente.
   \item Se $\Delta < 0$, então temos dois valores complexos conjugados $r_{\pm}=\alpha \pm i\beta$, e podemos escrever:
 \[
 y_h(t) = C_{\!_+} \cdot e^{r_{\!_+}  t} + C_{\!_-}\cdot  e^{r_{\!_-} t} = e^{\alpha t}\cdot \left(C_1\cdot \sin(\beta\, t) + C_2 \cdot \cos(\beta\, t)\right).
 \]
-Este caso é conhecido como \textbf{amortecimento subcrítico}, uma vez que el amortecimento não é suficiente para evitar que a solução fique oscilando.
+Este caso é conhecido como \textbf{amortecimento subcrítico}, uma vez
+que el amortecimento não é suficiente para evitar que a solução fique
+oscilando.
 \end{itemize}
-
 \begin{figure}
 \begin{figurebox}
     \vspace{10pt}
@@ -179,19 +236,19 @@ Este caso é conhecido como \textbf{amortecimento subcrítico}, uma vez que el a
           \centering
           \scalebox{0.25}{ \input{CodigosDibujos/OverDamped.tex}}
           \caption{$\Delta>0$}
-          \label{fig:0a} 
+          \label{fig:a} 
       \end{subfigure} %
       \begin{subfigure}{.3\textwidth}
           \centering
           \scalebox{0.25}{\input{CodigosDibujos/CriticallyDamped.tex}}
           \caption{$\Delta=0$}
-          \label{fig:0b}
+          \label{fig:b}
       \end{subfigure} %
       \begin{subfigure}{.3\textwidth}
           \centering
           \scalebox{0.25}{\input{CodigosDibujos/UnderDamped.tex}}
           \caption{$\Delta<0$}
-          \label{fig:0c}
+          \label{fig:c}
       \end{subfigure}
       % 
       \caption{Tipo de soluções da equação homogénea ($y_h$) a depender do signo de $\Delta$.}
@@ -204,7 +261,9 @@ Para terminar de concretizar a solução, apenas é necessário dar determinados
 
 
 \subsection{Solução da não homogénea} 
-É o momento de resolver a equação \eqref{eq:RLC}, de modo que procuramos uma função_p$ que satisfaça a equação \eqref{eq:RLC}, portanto tem que ser:
+É o momento de resolver a equação \eqref{eq:RLC}, de modo que
+procuramos uma função que satisfaça a equação \eqref{eq:RLC},
+portanto tem que ser:
 \[
 L\cdot C \cdot y_p '' (t) + R\cdot C\cdot y_p'(t) + y_p(t) = V_S(t).
 \]
@@ -546,7 +605,7 @@ Na Figura \ref{fig:Resonancia} podemos observar a representação gráfica de \e
   \label{eq:FrecuenciaNatural}
   \omega_r = \frac{1}{\sqrt{L\cdot C}}.
 \end{equation}
-Resulta que quando $\omega=\omega_r$ a impedância é um número real e o seu módulo alcança o seu valor mínimo (como se pode comprovar em \eqref{eq:Impedância}), de modo que a intensidade que circula pelo circuito é máxima (consequência imediata de \eqref{eq:OhmGeneral}). Ainda, na prática o coeficiente $R\cdot C$ é muito pequeno, de modo que \eqref{eq:ModuloFuncionTransferencia} alcança o seu valor máximo para uma frequência muito próxima a $\omega_r$.
+Resulta que quando $\omega=\omega_r$ a impedância é um número real e o seu módulo alcança o seu valor mínimo (como se pode comprovar em \eqref{eq:Impedancia}), de modo que a intensidade que circula pelo circuito é máxima (consequência imediata de \eqref{eq:OhmGeneral}). Ainda, na prática o coeficiente $R\cdot C$ é muito pequeno, de modo que \eqref{eq:ModuloFuncionTransferencia} alcança o seu valor máximo para uma frequência muito próxima a $\omega_r$.
 
 Por esta e outras razões, a frequência de ressonância é um parâmetro essencial na altura de caracterizar um circuito. A seguir vamos ver uma da suas aplicações mais imediatas.
 
@@ -565,13 +624,13 @@ Para ilustrar esta situação, devemos observar a Figura \ref{fig:EfectoFiltro},
           \centering
           \scalebox{0.30}{ \input{CodigosDibujos/SignalRuido.tex}}
           \caption{Sinal sem filtrar}
-          \label{fig:0a} 
+          \label{fig:aa} 
       \end{subfigure}%
       \begin{subfigure}{.45\textwidth}
           \centering
           \scalebox{0.30}{\input{CodigosDibujos/SignalSinRuido.tex}}
           \caption{Sinal filtrado}
-          \label{fig:0b}
+          \label{fig:bb}
       \end{subfigure}
       \caption{Efeito do filtro sobre um sinal com ruído}
       \label{fig:EfectoFiltro}

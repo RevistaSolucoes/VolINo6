@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.15)  17 NOV 2014 11:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.5.15)  24 NOV 2014 09:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1791,10 +1791,10 @@ File: Proyecciones-inc.pdf Graphic file (type pdf)
 Package pdftex.def Info: Proyecciones-inc.pdf used on input line 7.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 )
-Package mdframed Info: mdframed works in twoside mode on input line 188.
+Package mdframed Info: mdframed works in twoside mode on input line 187.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 188.
+(mdframed)              on input line 187.
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              You should note, that in 1994 font command `\sf' has
@@ -1807,21 +1807,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 191.
-
-
-Class scrartcl Warning: Usage of deprecated font command `\sf'!
-(scrartcl)              You should note, that in 1994 font command `\sf' has
-(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
-(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
-(scrartcl)              shouldn't use such commands any longer and within
-(scrartcl)              KOMA-Script usage of `\sf' is definitely deprecated.
-(scrartcl)              See `fntguide.pdf' for more information about
-(scrartcl)              recommended font commands.
-(scrartcl)              Note also, that KOMA-Script will remove the definition
-(scrartcl)              of `\sf' anytime until release of about version 3.20.
-(scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 191.
+(scrartcl)              by `\normalfont \sffamily ' on input line 190.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -1835,7 +1821,21 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 191.
+(scrartcl)              by `\normalfont \sffamily ' on input line 190.
+
+
+Class scrartcl Warning: Usage of deprecated font command `\sf'!
+(scrartcl)              You should note, that in 1994 font command `\sf' has
+(scrartcl)              been defined for compatiblitiy to Script 2.0 only.
+(scrartcl)              Now, after two decades of LaTeX2e and NFSS2, you
+(scrartcl)              shouldn't use such commands any longer and within
+(scrartcl)              KOMA-Script usage of `\sf' is definitely deprecated.
+(scrartcl)              See `fntguide.pdf' for more information about
+(scrartcl)              recommended font commands.
+(scrartcl)              Note also, that KOMA-Script will remove the definition
+(scrartcl)              of `\sf' anytime until release of about version 3.20.
+(scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
+(scrartcl)              by `\normalfont \sffamily ' on input line 190.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\tt'!
@@ -1849,13 +1849,13 @@ Class scrartcl Warning: Usage of deprecated font command `\tt'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\tt' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\tt'
-(scrartcl)              by `\normalfont \ttfamily ' on input line 191.
+(scrartcl)              by `\normalfont \ttfamily ' on input line 190.
 
 [20 <./Proyecciones-inc.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 197.
+Package mdframed Info: mdframed works in twoside mode on input line 196.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 197.
+(mdframed)              on input line 196.
 Package epstopdf Info: Source file: <MatrizRuben.eps>
 (epstopdf)                    date: 2014-11-03 13:28:30
 (epstopdf)                    size: 609691 bytes
@@ -1864,7 +1864,7 @@ Package epstopdf Info: Source file: <MatrizRuben.eps>
 (epstopdf)                    size: 60855 bytes
 (epstopdf)             Command: <repstopdf --outfile=MatrizRuben-eps-converted-
 to.pdf MatrizRuben.eps>
-(epstopdf)             \includegraphics on input line 218.
+(epstopdf)             \includegraphics on input line 217.
 Package epstopdf Info: Output file is already uptodate.
 
 <MatrizRuben-eps-converted-to.pdf, id=131, 1861.95625pt x 1019.81pt>
@@ -1872,7 +1872,7 @@ File: MatrizRuben-eps-converted-to.pdf Graphic file (type pdf)
 
 <use MatrizRuben-eps-converted-to.pdf>
 Package pdftex.def Info: MatrizRuben-eps-converted-to.pdf used on input line 21
-8.
+7.
 (pdftex.def)             Requested size: 465.48793pt x 254.95187pt.
 
 
@@ -1887,7 +1887,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 224.
+(scrartcl)              by `\normalfont \sffamily ' on input line 223.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -1901,7 +1901,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 224.
+(scrartcl)              by `\normalfont \sffamily ' on input line 223.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -1915,7 +1915,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 224.
+(scrartcl)              by `\normalfont \sffamily ' on input line 223.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\tt'!
@@ -1929,58 +1929,58 @@ Class scrartcl Warning: Usage of deprecated font command `\tt'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\tt' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\tt'
-(scrartcl)              by `\normalfont \ttfamily ' on input line 224.
+(scrartcl)              by `\normalfont \ttfamily ' on input line 223.
 
 [21 <./MatrizRuben-eps-converted-to.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 224.
+Package mdframed Info: mdframed works in twoside mode on input line 223.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 224.
+(mdframed)              on input line 223.
 
 <a16.pdf, id=148, 614.295pt x 794.97pt>
 File: a16.pdf Graphic file (type pdf)
  <use a16.pdf>
-Package pdftex.def Info: a16.pdf used on input line 231.
+Package pdftex.def Info: a16.pdf used on input line 230.
 (pdftex.def)             Requested size: 172.00142pt x 222.59007pt.
 
 <a8.pdf, id=149, 614.295pt x 794.97pt>
 File: a8.pdf Graphic file (type pdf)
  <use a8.pdf>
-Package pdftex.def Info: a8.pdf used on input line 231.
+Package pdftex.def Info: a8.pdf used on input line 230.
 (pdftex.def)             Requested size: 172.00142pt x 222.59007pt.
 
 <a4.pdf, id=150, 614.295pt x 794.97pt>
 File: a4.pdf Graphic file (type pdf)
  <use a4.pdf>
-Package pdftex.def Info: a4.pdf used on input line 231.
+Package pdftex.def Info: a4.pdf used on input line 230.
 (pdftex.def)             Requested size: 172.00142pt x 222.59007pt.
 
-Overfull \hbox (48.39044pt too wide) in paragraph at lines 230--233
+Overfull \hbox (48.39044pt too wide) in paragraph at lines 229--232
  [] 
  []
 
 <helado.pdf, id=153, 614.295pt x 794.97pt>
 File: helado.pdf Graphic file (type pdf)
  <use helado.pdf>
-Package pdftex.def Info: helado.pdf used on input line 243.
+Package pdftex.def Info: helado.pdf used on input line 242.
 (pdftex.def)             Requested size: 208.85753pt x 270.28622pt.
 
 <panda.pdf, id=154, 614.295pt x 794.97pt>
 File: panda.pdf Graphic file (type pdf)
  <use panda.pdf>
-Package pdftex.def Info: panda.pdf used on input line 243.
+Package pdftex.def Info: panda.pdf used on input line 242.
 (pdftex.def)             Requested size: 208.85753pt x 270.28622pt.
 
 <tren.pdf, id=155, 614.295pt x 794.97pt>
 File: tren.pdf Graphic file (type pdf)
  <use tren.pdf>
-Package pdftex.def Info: tren.pdf used on input line 244.
+Package pdftex.def Info: tren.pdf used on input line 243.
 (pdftex.def)             Requested size: 208.85753pt x 270.28622pt.
 
 <pinguino.pdf, id=156, 614.295pt x 794.97pt>
 File: pinguino.pdf Graphic file (type pdf)
  <use pinguino.pdf>
-Package pdftex.def Info: pinguino.pdf used on input line 244.
+Package pdftex.def Info: pinguino.pdf used on input line 243.
 (pdftex.def)             Requested size: 208.85753pt x 270.28622pt.
 
 
@@ -1995,7 +1995,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 254.
+(scrartcl)              by `\normalfont \sffamily ' on input line 253.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -2009,7 +2009,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 254.
+(scrartcl)              by `\normalfont \sffamily ' on input line 253.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -2023,7 +2023,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 254.
+(scrartcl)              by `\normalfont \sffamily ' on input line 253.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\tt'!
@@ -2037,7 +2037,7 @@ Class scrartcl Warning: Usage of deprecated font command `\tt'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\tt' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\tt'
-(scrartcl)              by `\normalfont \ttfamily ' on input line 254.
+(scrartcl)              by `\normalfont \ttfamily ' on input line 253.
 
 [22 <./a16.pdf> <./a8.pdf> <./a4.pdf>]
 
@@ -2052,7 +2052,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 254.
+(scrartcl)              by `\normalfont \sffamily ' on input line 253.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -2066,7 +2066,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 254.
+(scrartcl)              by `\normalfont \sffamily ' on input line 253.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\sf'!
@@ -2080,7 +2080,7 @@ Class scrartcl Warning: Usage of deprecated font command `\sf'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\sf' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\sf'
-(scrartcl)              by `\normalfont \sffamily ' on input line 254.
+(scrartcl)              by `\normalfont \sffamily ' on input line 253.
 
 
 Class scrartcl Warning: Usage of deprecated font command `\tt'!
@@ -2094,7 +2094,7 @@ Class scrartcl Warning: Usage of deprecated font command `\tt'!
 (scrartcl)              Note also, that KOMA-Script will remove the definition
 (scrartcl)              of `\tt' anytime until release of about version 3.20.
 (scrartcl)              But for now, KOMA-Script will replace deprecated `\tt'
-(scrartcl)              by `\normalfont \ttfamily ' on input line 254.
+(scrartcl)              by `\normalfont \ttfamily ' on input line 253.
 
 [23 <./helado.pdf> <./panda.pdf> <./tren.pdf> <./pinguino.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
@@ -2116,7 +2116,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
 Here is how much of TeX's memory you used:
  27407 strings out of 493304
  490201 string characters out of 6139871
- 627630 words of memory out of 5000000
+ 627631 words of memory out of 5000000
  30284 multiletter control sequences out of 15000+600000
  100159 words of font info for 74 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -2139,7 +2139,7 @@ nts/type1/arkandis/venturis2/yv2ri8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/arkandis/venturissans2/yv3b8ax.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/arkandis/venturissans2/yv3r8a.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/arkandis/venturissans2/yv3ri8a.pfb>
-Output written on informaticaeningenieria.pdf (7 pages, 5130678 bytes).
+Output written on informaticaeningenieria.pdf (7 pages, 5130704 bytes).
 PDF statistics:
  260 PDF objects out of 1000 (max. 8388607)
  181 compressed objects within 2 object streams

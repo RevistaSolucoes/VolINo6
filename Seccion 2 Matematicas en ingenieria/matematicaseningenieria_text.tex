@@ -1,10 +1,13 @@
 \section{Introducción}
-En el anterior artículo de esta serie vimos cómo representar una función periódica como suma de armónicos, idea que desarrolló Fourier cuando quiso explicar cómo se propagaba el calor. Sin embargo, esa técnica resultó ser fácilmente extrapolable a problemas de otras ramas de la física e ingenería, como la teoría de circuitos eléctricos.
+En el anterior artículo de esta serie vimos cómo representar una
+función periódica como suma de armónicos, idea que desarrolló Fourier
+cuando quiso explicar cómo se propagaba el calor. Sin embargo, esa
+técnica resultó ser fácilmente extrapolable a problemas de otras ramas
+de la física e ingenería, como la teoría de circuitos eléctricos.
 
-A lo largo de este artículo iremos aplicando la estrategia que desarrolló Fourier a un clásico problema de electromagnetismo, el circuito RLC (resistor-inductor-capacitor circuit). De hecho, tras una primera aproximación utilizando senos y cosenos, volveremos a mirar el problema bajo el prisma del análisis complejo, viendo como el problema se simplifica aún más.
+A lo largo de este artículo iremos aplicando la estrategia que desarrolló Fourier a un clásico problema de electromagnetismo, el circuito RLC (resistor-inductor-capacitor). De hecho, tras una primera aproximación utilizando senos y cosenos, volveremos a mirar el problema bajo el prisma del análisis complejo, viendo como el problema se simplifica aún más.
 
 Si queréis ampliar, os recomendamos que consultéis \cite{Sadiku}, pues es el libro que seguiremos en este artículo.
-
 \section{El circuito RLC}
 Vamos a comenzar planteando detalladamente el problema que queremos resolver. Tenemos el circuito mostrado en la Figura \ref{fig:RLC}, formado por una resistencia que denotamos por $R$, una bobina con inducción $L$ y un condensador con capacidad $C$, con todos los elementos dispuestos en serie.
 \begin{figure}[h]
@@ -141,7 +144,7 @@ y_h(t) = e^{r\cdot t},
 \]
 donde $r$ es una constante que puede ser compleja\footnote{Para un análisis detallado de las ecuaciones diferenciales de coeficientes constantes, consultar \cite[p.~226]{DiPrima}}. Al sustitur $y_h$ en \eqref{eq:HomogeneaRLC} deducimos que $r$ debe ser solución de la ecuación característica
 \begin{equation}
-  \label{eq:Caracteristica}
+\label{eq:Caracteristica}
   L\cdot C\cdot r^2 + R\cdot C\cdot r + 1 = 0
 \end{equation}
 de modo que el problema pasa por analizar esta ecuación de segundo grado. Despejando $r$ de \eqref{eq:Caracteristica} obtenemos:
@@ -179,19 +182,19 @@ Este caso se conoce como \textbf{amortiguamiento subcrítico}, ya que el amortig
           \centering
           \scalebox{0.25}{ \input{CodigosDibujos/OverDamped.tex}}
           \caption{$\Delta>0$}
-          \label{fig:0a} 
+          \label{fig:a} 
       \end{subfigure} %
       \begin{subfigure}{.3\textwidth}
           \centering
           \scalebox{0.25}{\input{CodigosDibujos/CriticallyDamped.tex}}
           \caption{$\Delta=0$}
-          \label{fig:0b}
+          \label{fig:b}
       \end{subfigure} %
       \begin{subfigure}{.3\textwidth}
           \centering
           \scalebox{0.25}{\input{CodigosDibujos/UnderDamped.tex}}
           \caption{$\Delta<0$}
-          \label{fig:0c}
+          \label{fig:c}
       \end{subfigure}
       % 
       \caption{Tipo de soluciones de la ecuación homogénea ($y_h$) dependiendo del signo de $\Delta$.}
@@ -552,9 +555,15 @@ Por esta y otras razones, la frecuencia de resonancia es un parámetro esencial 
 
 
 \subsection{Filtros pasabanda}
-Cuando se trabaja en telecomunicaciones, es común encontrarnos con señales que presentan un nivel de \textbf{ruido} que nos impide recibir la señal con claridad. Ante esta situación sería ideal tener alguna manera de eliminar el ruido, haciendo pasar la señal por un \textbf{filtro}.
+Cuando se trabaja en telecomunicaciones, es común encontrarnos con
+señales que presentan un nivel de \textbf{ruido} que nos impide
+recibir la señal con claridad. Ante esta situación sería ideal tener
+alguna manera de eliminar el ruido, haciendo pasar la señal por un
+\textbf{filtro}.
 
-Para ilustrar esta situación debemos fijarnos en la Figura \ref{fig:EfectoFiltro}, donde representamos la señal con la que empezamos y la señal a la que queremos llegar.
+Para ilustrar esta situación debemos fijarnos en la Figura
+\ref{fig:EfectoFiltro}, donde representamos la señal con la que
+empezamos y la señal a la que queremos llegar.
 
 
 \begin{figure}[h]
@@ -565,13 +574,13 @@ Para ilustrar esta situación debemos fijarnos en la Figura \ref{fig:EfectoFiltr
           \centering
           \scalebox{0.30}{ \input{CodigosDibujos/SignalRuido.tex}}
           \caption{Señal sin filtrar}
-          \label{fig:0a} 
+          \label{fig:ab} 
       \end{subfigure}%
       \begin{subfigure}{.45\textwidth}
           \centering
           \scalebox{0.30}{\input{CodigosDibujos/SignalSinRuido.tex}}
           \caption{Señal filtrada}
-          \label{fig:0b}
+          \label{fig:bb}
       \end{subfigure}
       \caption{Efecto del filtro sobre una señal con ruido}
       \label{fig:EfectoFiltro}
